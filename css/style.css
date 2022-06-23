@@ -1,0 +1,395 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.boldest {
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+button {
+  background-color: #fff;
+  color: #000;
+  font-size: 0.7rem;
+}
+
+footer {
+  font-size: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Nanum Myeongjo', 'Garamond', serif;
+  text-transform: uppercase;
+}
+
+h1, h2, p {
+  padding-left: 2%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.large-h2 {
+  font-size: 1.5rem;
+}
+
+li {
+  list-style-type: none;
+}
+
+.plain-text {
+  font-weight: 200;
+}
+
+.small-image {
+  width: 100%;
+}
+
+#staff {
+  position: relative;
+  top: -25vh;
+}
+
+.staff-photo {
+  width: 80%;
+}
+
+ul {
+  padding-bottom: 5%;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+.booking {
+  padding: 10%;
+}
+
+.box {
+  background-color: #000;
+  color: #fff;
+  float: left;
+  padding-left: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  width: 40%;
+}
+
+.box-resize {
+  border-radius: 6px 0 0 6px;
+  color:rgb(243, 239, 245);
+  font-size: 2rem;
+  height: 25vh;
+  margin: 2% 0 0 0;
+  text-align: center;
+  width: 100%;
+}
+
+.looks {
+  max-width: 100%;
+}
+
+#lookbook {
+  position: relative;
+  top: -15vh;
+}
+
+nav {
+  text-align: center;
+}
+
+.nav-menu {
+  display: inline-block;
+  padding-left: 2%;
+  position: relative;
+  top: 2vh;
+  text-align: center;
+}
+
+.nav-menu:hover {
+  background-color: rgb(69, 73, 85);
+  color: rgb(243, 239, 245);
+  font-weight: bold;
+}
+
+#news {
+  position: relative;
+  top: -20vh;
+}
+
+.products {
+  position: relative;
+  top: -35vh;
+}
+
+#services {
+  position: relative;
+  top: -40vh;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#about {
+  background-color: rgba(187, 161, 161, 0.5);
+  position: relative;
+  top: -30vh;
+}
+
+.black-button {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.5rem;
+  padding: 0.5% 1% 0.5% 2%;
+}
+
+.black-box {
+  background-color: #000;
+  color: #fff;
+  padding: 0.5% 2%;
+  text-align: center;
+}
+
+.black-line {
+  margin: 0 4% 6% 4%;
+  outline: #000 2px solid;
+  text-align: center;
+}
+
+.capitalize {
+  text-transform: uppercase;
+}
+
+.centered {
+  text-align: center;
+}
+
+.discount {
+  font-size: 2rem;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.logo {
+  float: left;
+  width: 80px;
+}
+
+.nav-image {
+  width: 15px;
+}
+
+.outline {
+  background-color: rgba(187, 161, 161, 0.85);
+  border: rgba(52, 44, 44, 0.5) 2px solid;
+  border-radius: 0 10px;
+  padding: 1%;
+}
+
+.price-list {
+  font-size: 0.75rem;
+  margin-left: 0;
+}
+
+#top {
+  background-image: url("../images/hero-image.jpeg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 7% 0;
+  color: #fff;
+  clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 74%);
+  height: 95vh;
+  border-bottom-right-radius: 18%;
+  border-bottom: 9px rgb(73, 70, 164) solid;
+}
+
+summary {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.6rem;
+  padding: 4%;
+  text-transform: uppercase;
+  max-width: 80px;
+}
+
+/******************************************
+/* MEDIA QUERIES
+/*******************************************/
+
+@media screen and (min-width: 275px) and (max-width: 499px) {
+  #about {
+    top: -45vh;
+  }
+
+  #lookbook {
+    top: -30vh;
+  }
+
+  #news {
+    top: -35vh;
+  }
+
+  .products {
+    position: relative;
+    top: -50vh;
+  }
+
+  #services {
+    top: -55vh;
+  }
+
+  #staff {
+    top: -40vh;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .photo-columns {
+    float: left;
+    margin-left: 5%;
+    width: 45%;
+  }
+
+  .two-column {
+    float: left;
+    margin-left: 10%;
+    max-width: 45%;
+    padding: 0 2%;
+  }
+
+  .three-column {
+    float: left;
+    margin-left: 0;
+    max-width: 30%;
+    padding: 0 4%;
+  }
+
+    h1 {
+      font-size: 4rem;
+      max-width: 50%;
+    }
+
+    .looks {
+      max-width: 40vw;
+    }
+
+    .nav-button {
+      float: right;
+      position: relative;
+      top: -3.5vh;
+    }
+
+    .outline-height {
+      min-height: 55vh;
+    }
+
+    #services {
+      top: -40vh;
+    }
+
+    .small-image {
+      float: right;
+      margin-right: 10%;
+      width: 35%;
+    }
+
+    .staff-names {
+      font-size: 0.7rem;
+    }
+
+    .staff-photo {
+      width: 100%;
+    }
+}
+
+@media screen and (min-width: 715px) {
+  .four-column {
+    float: left;
+    max-width: 20%;
+    padding: 0 2%;
+  }
+
+  .hidden {
+    display: inline-block;
+    margin: 0 2% 2% 0;
+  }
+
+  h2 {
+    max-width: 60%;
+  }
+
+  summary {
+    max-width: 15%;
+    padding: 2%;
+  }
+  
+  ul {
+    padding-bottom: 3%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+
+  .booking {
+    padding: 6%;
+  }
+
+  .hidden {
+    display: block;
+  }
+
+  .looks {
+    max-width: 30vw;
+  }
+
+  .outline-height {
+    min-height: 40vh;
+  }
+
+  .photo-columns {
+    float: left;
+    margin-left: 2%;
+    width: 30%;
+  }
+}
