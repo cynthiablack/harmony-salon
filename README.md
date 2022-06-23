@@ -3,20 +3,14 @@ This is a demo site for a hair salon, spa, or other beauty business. The site is
 
 **Link to project:** https://harmony-salon.netlify.app
 
-![Site Preview Image](https://github.com/cynthiablack/rbCoffee/blob/main/RBC-site-preview.jpg)  UPDATE THIS
+![Site Preview Image](https://github.com/cynthiablack/harmony-salon/blob/main/harmony-salon-site-preview.jpg)
 
 ## How It's Made:
 
 **Tech used:** HTML, CSS
 
-Resurrection Bay Coffee was built using semantic HTML and responsive CSS. The site is built for smaller screens, then CSS media queries were added to create a desktop-friendly layout. Limiting the number of images keeps the lightweight and fast to respond, while responsive CSS means the site looks good and works well across a variety of screen sizes.  UPDATE THIS
-
-## Optimizations
-
-UPDATE THIS
-- rebuilt site as mobile-first to fix mobile user experience issues  
-UPDATE THIS
+Harmony Salon and Spa was built using semantic HTML and responsive CSS. Mobile use was front-of-mind during the design and build phase; accordingly, the site is based on a single-column layout that expands to include more columns and content as the available screen size increases.
 
 ## Lessons Learned:
 
-The original version of the site included multiple background images; while this gave a little "wow" to the overall site design, it also made the site slower to load, made creating a responsive layout more challenging, and required the use of <div> tags for each section (which made the site potentially less accessible than a site built with semantic HTML tags). While some <div> tags remain, they are used for decorative aspects of the site, rather than to deploy needed content.  UPDATE THIS
+While the site was built from a mobile-first perspective, the primary challenge associated with this project was to complete the site using CSS floats, rather than CSS Flexbox or Grid. This is not optimal design as it requires multiple media queries to ensure usability across screens and potentially impacts accessibility. Semantic HTML was used where possible, but the full-screen columnar layout required multiple non-semantic <div> elements. CSS Flebox, CSS Grid, or even a tool like Bootstrap or Tailwind CSS would allow for a similar layout without compromising accessibility.
